@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TableRow android:layout_width="match_parent"
+        android:background="@color/color_tim"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="16dp"
+            android:id="@+id/btn_back"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:lines="1"
+            android:id="@+id/tv_toolbar"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center"/>
+
+    </TableRow>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.glomadrian.loadingballs.BallView
+            android:layout_margin="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            lib:balls="3"
+            android:id="@+id/loading"
+            lib:movement_cycle_time="1500"
+            lib:enable_size_animation="true"
+            lib:size_cycle_time="500"
+            lib:min_ball_size="5dp"
+            android:layout_centerInParent="true"
+            lib:max_ball_size="12dp"
+            lib:ball_colors="@array/colors"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_video"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.google.android.gms.ads.AdView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                android:id="@+id/banner"
+                ads:adUnitId="@string/banner_id"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

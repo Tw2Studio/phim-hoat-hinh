@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "615973796446",
+    "firebase_url": "https://giai-bai-tap.firebaseio.com",
+    "project_id": "giai-bai-tap",
+    "storage_bucket": "giai-bai-tap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615973796446:android:3208561994fedcd6",
+        "android_client_info": {
+          "package_name": "com.tw2.phimhoathinh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615973796446-uh3nrmk0v5el3pg34jkbdgo2a11e6910.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tw2.phimhoathinh",
+            "certificate_hash": "f896536e3ac3b2a3500865a5812d182107f47e48"
+          }
+        },
+        {
+          "client_id": "615973796446-9v88raet81hhqgjufsrqddbg77h02a5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbigHhzc846qT1SXzpGYUaqv83RucEw6o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615973796446-9v88raet81hhqgjufsrqddbg77h02a5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
